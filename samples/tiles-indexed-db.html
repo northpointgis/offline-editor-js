@@ -238,7 +238,8 @@
             bootstrapmap: "//esri.github.io/bootstrap-map-js/src/js/bootstrapmap"
 		}
 	}
-    window.proxyPath = "../lib/resource-proxy/proxy.php";
+    //window.proxyPath = "../lib/resource-proxy/proxy.php";
+    window.proxyPath = "http://localhost/proxy/proxy.ashx";
 </script>
 
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -305,7 +306,7 @@ require(
 
 		function loadWebmap(webmapid)
 		{
-			webmapid = webmapid || "bbc1a04a3eca4430be144d7a08b43a17";
+			webmapid = webmapid || "3b5c0848fe1b4278989a97e654994962";
 			// Get new webmap and extract map and map parts
 			var mapDeferred = esriUtils.createMap(webmapid, "mapDiv", {
 				mapOptions: {
